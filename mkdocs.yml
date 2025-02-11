@@ -2,19 +2,23 @@ site_name: My MkDocs Material Documentation
 site_url: https://sitename.example
 theme:
   name: material
+  language: zh
   font: 
-   text: 思源黑体
+   text: Noto Sans Simplified Chinese
    code: Red Hat Mono
 
   features:
-    - navigation.footer
+    #- navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+
   palette:
     # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: green
+      primary: blue grey
       accent: deep purple
 
     # Light Mode
@@ -22,8 +26,11 @@ theme:
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: blue
+      primary: teal
       accent: deep orange
+
+plugins: 
+  - blog
 
 markdown_extensions:
   - attr_list
